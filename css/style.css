@@ -14,37 +14,259 @@
 }
 
 /* Estilos Generales */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
 }
 
-button{
-    cursor: pointer;
-}
-
-.main, .footer {
-    width: 90%;
-    margin: 0  auto;
+button {
+  cursor: pointer;
 }
 
 /* Menu de Navegacion */
 
+.header {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .nav {
-    display: flex;
-    padding: 50px 0;
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav img {
-    width: 100px;
+  width: 100px;
 }
 
 .nav__list {
-    list-style: none;
+  list-style: none;
+  display: flex;
+}
+
+.nav__item {
+  margin: 0 15px;
+}
+
+.right {
+  margin: 0;
+}
+
+.nav__link {
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content-image img {
+  width: 100%;
+}
+
+.section-1 .content-text {
+  text-align: center;
+}
+
+.tittle {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 24px;
+  padding: 30px 20px;
+}
+
+.content-text input,
+.btn {
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+}
+
+.content-text input {
+  margin-bottom: 20px;
+  border: 1px solid var(--Very-Dark-Blue);
+  color: var(--Very-Dark-Blue);
+  font-size: 1rem;
+  outline: none;
+}
+
+.content-text input:focus {
+  border: 2px solid var(--Bright-Blue);
+  font-weight: 700;
+}
+
+.btn {
+  background-color: var(--Bright-Blue);
+  border-style: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Raleway';
+}
+
+.curved {
+  background-color: var(--Light-Grayish-Blue);
+  width: 100%;
+  height: 30vh;
+  clip-path: ellipse(80% 50% at 50% 100%);
+}
+
+.section-2 {
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.content-section-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content-section-2 .content-image {
+    width: 100%;
+}
+
+.content-section-2 .content-image img{
+    width: 100%;
+}
+
+.content-section-2 .content-text {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.content-section-2 .content-text .tittle {
+    font-size: 1.1rem;
+}
+
+.content-section-2 .content-text .description {
+    width: 100%;
+    text-align: start;
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.content-section-2 .content-text a {
+    align-items: center;
+    color: var(--Moderate-Cyan);
+    display: inline-flex;
+    font-weight: 400;
+    padding-top: 20px;
+    position: relative;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.content-section-2 .content-text a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--Moderate-Cyan);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.content-section-2 .content-text a:hover::after {
+    width: 100%;
+}
+
+.content-section-2 .content-text a img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.comment {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+}
+
+.comment p {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.perfile {
+    display: flex;
+}
+
+.perfile img {
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.perfile-text {
+    margin-left: 10px;
+}
+
+.perfile-text h4 {
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.perfile-text p{
+    padding: 0;
+    font-size: .8rem;
+}
+
+.section-3 {
+    text-align: center;
+    background-color: var(--Desaturated-Blue);
+}
+
+.section-3 .content-section-3 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 80px 0 20px 0;
+}
+
+.section-3 .content-section-3 .tittle {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.section-3 .content-section-3 p {
+    color: #fff;
+    padding: 10px 0;
+    line-height: 1.5rem;
+}
+
+.section-3 .content-text {
+    padding-bottom: 80px;
+    width: 90%;
+    margin: 0 auto;
 }
